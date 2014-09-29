@@ -64,11 +64,9 @@ public class Device {
 //		}
 	}
 	public String getPath() {
-		// TODO Auto-generated method stub
-		return null;
+		return "/home/kai/Pictures/images.png";
 	}
 	public String getStatus() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 

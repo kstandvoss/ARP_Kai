@@ -16,13 +16,13 @@ import models.Device;
 
 public class DeviceView extends JPanel {
     
-    Device device;
-    JLabel label;
-    JLabel type;
-    JLabel ip;
-    JLabel mac;
-    JLabel status;
-    JComboBox typebox;
+    private Device device;
+    private JLabel label;
+    private JLabel type;
+    private JLabel ip;
+    private JLabel mac;
+    private JLabel status;
+    private JComboBox typebox;
     
     public DeviceView(Device d){
     	this.device = d;

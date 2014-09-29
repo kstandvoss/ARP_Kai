@@ -18,11 +18,11 @@ import models.Device;
 
 public class MainView extends JPanel {
 	
-	JButton arp;
-	JLabel network;
-	JLabel timePendent;
-	JLabel timeInactive;
-	IconView left;
+	private JButton arp;
+	private JLabel network;
+	private JLabel timePendent;
+	private JLabel timeInactive;
+	private IconView left;
 	
 	
 	public MainView(){
@@ -54,7 +54,6 @@ public class MainView extends JPanel {
 		panel.setLayout(new GridLayout(2,1));
 		arp = new JButton("Sent ARP");
 		panel.add(new JPanel());
-	//	panel.add(new JPanel());
 		panel.add(arp);
 		right.add(panel);
 		
