@@ -64,7 +64,7 @@ public class Device {
 //		}
 	}
 	public String getPath() {
-		return "/home/kai/Pictures/images.png";
+		return "resources/images.png";
 	}
 	public String getStatus() {
 		return null;

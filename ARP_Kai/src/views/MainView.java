@@ -19,7 +19,9 @@ import models.Device;
 public class MainView extends JPanel {
 	
 	private JButton arp;
+	private JLabel device;
 	private JLabel network;
+	private JLabel mask;
 	private JLabel timePendent;
 	private JLabel timeInactive;
 	private IconView left;
@@ -38,16 +40,25 @@ public class MainView extends JPanel {
 		left.addIcon(new Device(a,a));
 		left.addIcon(new Device(a,a));
 		JPanel right = new JPanel();
-		right.setLayout(new GridLayout(2,1));
+		right.setLayout(new GridLayout(4,1));
 		
 		JPanel panel = new JPanel();
-		panel.setLayout(new GridLayout(3,1));
+		panel.setLayout(new GridLayout(5,1));
+		device = new JLabel("Bla");
 		network = new JLabel("Network: 192.168.0.0");
+		mask = new JLabel("Mask: 255.255.255.255");
 		timePendent = new JLabel("Time until pendent: 5sec");
 		timeInactive = new JLabel("Time until inactive: 10sec");
+		panel.add(device);
 		panel.add(network);
+		panel.add(mask);
 		panel.add(timePendent);
 		panel.add(timeInactive);
+		right.add(panel);
+		
+		panel = new JPanel();
+		right.add(panel);
+		panel = new JPanel();
 		right.add(panel);
 		
 		panel = new JPanel();
